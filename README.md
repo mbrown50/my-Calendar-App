@@ -14,7 +14,6 @@ https://mbrown50.github.io/my-Calendar-App
 GitHub Repo:
 https://github.com/mbrown50/my-Calendar-App
 
--- submit a link to the video and add it to the readme of your project. --
 -- add screen shot --
 
 ## Installation
@@ -22,7 +21,6 @@ https://github.com/mbrown50/my-Calendar-App
 N/A
 
 ## Usage
-Express.js API, Insomnia, localhost. See video link above.
 
 N/A
 
