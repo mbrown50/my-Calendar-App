@@ -1,0 +1,15 @@
+{
+  "name": "my-calendar-app",
+  "version": "1.0.0",
+  "description": "A calendar application for a work day scheduler.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.10"
+  }
+}
