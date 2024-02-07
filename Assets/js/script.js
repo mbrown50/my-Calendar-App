@@ -6,8 +6,11 @@ $(function () {
   let curDay = dayjs();
   //console.log(curDay);
 
-  // TODO: Add code to display the current date in the header of the page.
-  document.getElementById('currentDay').innerHTML = curDay.$d;
+  let updateTime = function() {
+    curDay = dayjs();
+    // TODO: Add code to display the current date in the header of the page.
+    document.getElementById('currentDay').innerHTML = curDay.$d;
+  }
 
   let showTasks = function (element) { // element is div class time-block
 
@@ -54,6 +57,8 @@ $(function () {
   // useful when saving the description in local storage?
   let mySave = function (element) { // element is div class time-block
 
+    setHourColors(element);
+
       /* -- div class time-block
     <div id="hour-9" class="row time-block ">
       <div class="col-2 col-md-1 hour text-center py-3">9AM</div>
@@ -70,7 +75,35 @@ $(function () {
     //let time_block_id = element.closest('.time-block')//.attr('id');
     //console.log(time_block_id)
 
-    let time_id = element.getElementsByTagName('div')[0]; //.attr('class');
+  //  let time_id = element.getElementsByTagName('div')[0]; //.attr('class');
+
+   // curDay = dayjs();
+  //console.log(curDay);
+
+  // TODO: Add code to display the current date in the header of the page.
+  //document.getElementById('currentDay').innerHTML = curDay.$d;
+
+   // console.log("THIS: " + this);
+   // console.log("element: " + element);
+
+
+    let time_block_id = element.id;
+    console.log("show time block ID: " + time_block_id);
+
+    let textTag = element.getElementsByTagName('textarea')[0]; //.innerHTML("myTask")
+    console.log(textTag);
+
+    let description = textTag.value;
+    console.log(description);
+
+     //let description = localStorage.getItem(time_block_id);
+      //console.log("description :" + description);
+
+     if (description !== null)
+     {
+     // set localStorage
+     localStorage.setItem(time_block_id, description);
+     }
    // console.log(time_id);
 
     // TODO: Add code to get any user input that was saved in localStorage and set
@@ -112,9 +145,9 @@ $(function () {
       </button>
     </div>
     */
-    curDay = dayjs();
+    updateTime();
     // TODO: Add code to display the current date in the header of the page.
-    document.getElementById('currentDay').innerHTML = curDay.$d;
+    //document.getElementById('currentDay').innerHTML = curDay.$d;
    
     //let time_block = element.closest('.time-block');
     let time_block_id = element.id;
@@ -163,6 +196,10 @@ $(function () {
     }
 
   }
+
+
+    // main
+    updateTime();
 
   // loops through hours and sets hour color
   // loops through tasks buttons enters data from local storage
