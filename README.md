@@ -15,8 +15,8 @@ GitHub Repo:
 https://github.com/mbrown50/my-Calendar-App
 
 
-![Image of deployed site 1](./assets/img/screenshot1.jpg "Deployed site")
-![Image of deployed site 1](./assets/img/screenshot2.jpg "Deployed site with updated entries")
+![Image of deployed site 1](./Assets/img/screenshot1.jpg "Deployed site")
+![Image of deployed site 2](./Assets/img/screenshot2.jpg "Deployed site with updated entries")
 
 ## Installation
 
