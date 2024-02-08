@@ -129,10 +129,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# mac file
 .DS_Store
-./assets/DS_Store
-
-# assignment
 README-assignment.md
 05-third-party-apis-homework-demo.gif
